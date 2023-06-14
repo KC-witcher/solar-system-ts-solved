@@ -1,14 +1,14 @@
-export type MassData = {
+export interface MassData {
   massValue: number;
   massExponent: number;
-};
+}
 
-export type VolData = {
+export interface VolData {
   volValue: number;
   volExponent: number;
-};
+}
 
-export type Planet = {
+export interface Planet {
   id: string;
   name: string;
   isPlanet: boolean;
@@ -18,18 +18,18 @@ export type Planet = {
   avgTemp: number;
   moonsCount?: number;
   moons?: string[];
-};
+}
 
-export type Asteroid = {
+export interface Asteroid {
   name: string;
   discoveryYear: number;
   orbitalPeriod: number;
-};
+}
 
-export type AllData = {
+export interface AllData {
   planets: Planet[];
   asteroids: Asteroid[];
-};
+}
 
 export const data: AllData = {
   planets: [
