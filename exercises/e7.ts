@@ -5,12 +5,12 @@ import { Planet } from "../data/data";
 // Return an array of all Planets names that have moons
 export function getPlanetsWithMoons(planets: Planet[]) {
   return planets
-    .filter((planet: Planet) => {
+    .filter((planet) => {
       if (planet.moonsCount) {
         return planet;
       }
     })
-    .map((planet: Planet) => planet.name);
+    .map((planet) => planet.name);
 }
 
 // === TEST YOURSELF ===

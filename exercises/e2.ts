@@ -5,7 +5,7 @@
 import { Asteroid } from "../data/data";
 
 export function getAsteroidNames(asteroids: Asteroid[]) {
-  return asteroids.map((asteroid: Asteroid) => asteroid.name);
+  return asteroids.map((asteroid) => asteroid.name);
 }
 
 // === TEST YOURSELF ===

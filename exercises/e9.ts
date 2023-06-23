@@ -5,7 +5,7 @@
 import { AllData, Planet } from "../data/data";
 
 export let findEarthData = (data: AllData) => {
-  return data.planets.find((planet: Planet) => planet.name === "Earth");
+  return data.planets.find((planet) => planet.name === "Earth");
 };
 
 // === TEST YOURSELF ===

@@ -4,7 +4,7 @@
 import { Planet } from "../data/data";
 
 export function getPlanetsWithNoMoons(planets: Planet[]) {
-  return planets.filter((planet: Planet) => {
+  return planets.filter((planet) => {
     if (planet.moonsCount === undefined) {
       return planet;
     }

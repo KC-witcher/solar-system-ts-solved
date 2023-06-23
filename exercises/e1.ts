@@ -5,7 +5,7 @@
 import { Planet } from "../data/data";
 
 export function getPlanetNames(data: Planet[]): string[] {
-  return data.map((planet: Planet) => planet.name);
+  return data.map((planet) => planet.name);
 }
 
 // === TEST YOURSELF ===

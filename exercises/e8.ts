@@ -11,9 +11,9 @@ export function findPlanetByMoon({
   planets: Planet[];
   moonName: string;
 }) {
-  return planets.find((planet: Planet) =>
+  return planets.find((planet) =>
     planet.moons
-      ?.map((moon: string) => moon.toLowerCase())
+      ?.map((moon) => moon.toLowerCase())
       .includes(moonName.toLowerCase())
   );
 }

@@ -6,12 +6,12 @@ import { AllData, Planet } from "../data/data";
 // Return example: 42
 export const allPlanetsMoonsCount = (data: AllData) => {
   return data.planets
-    .map((planet: Planet) => {
+    .map((planet) => {
       if (planet.moonsCount) {
         return planet.moonsCount;
       } else return 0;
     })
-    .reduce((acc: number, prev: number) => {
+    .reduce((acc, prev) => {
       return acc + prev;
     });
 };
